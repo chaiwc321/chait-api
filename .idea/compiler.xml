@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <excludeFromCompile>
+      <directory url="file://$PROJECT_DIR$/chait-api-application/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/chait-api-domain/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/chait-api-interfaces/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/chait-api-infrastructure/src/main/resources/archetype-resources" includeSubdirectories="true" />
+      <directory url="file://$PROJECT_DIR$/chait-api-common/src/main/resources/archetype-resources" includeSubdirectories="true" />
+    </excludeFromCompile>
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="chait-api-common" />
+        <module name="chait-api-application" />
+        <module name="chait-api-interface" />
+        <module name="chait-api-domain" />
+        <module name="chatbot-api-infrastructure" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="chait-api-infrastructure" target="1.8" />
+      <module name="chait-api-interfaces" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="chait-api" options="" />
+      <module name="chait-api-application" options="-parameters" />
+      <module name="chait-api-common" options="-parameters" />
+      <module name="chait-api-domain" options="-parameters" />
+      <module name="chait-api-infrastructure" options="-parameters" />
+      <module name="chait-api-interface" options="-parameters" />
+      <module name="chait-api-interfaces" options="-parameters" />
+      <module name="chatbot-api-infrastructure" options="-parameters" />
+    </option>
+  </component>
+</project>
